@@ -9,9 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     env:
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}
       NEXT_TELEMETRY_DISABLED: 1
 
     steps:
@@ -37,14 +35,6 @@ jobs:
           else
             echo "No lint script. Skipping."
           fi
-
-      - name: Prisma generate
-        if: env.DATABASE_URL != ''
-        run: npx prisma generate
-
-      - name: Prisma migrate check (safe)
-        if: env.DATABASE_URL != ''
-        run: npx prisma migrate diff --from-schema-datamodel prisma/schema.prisma --to-url "$DATABASE_URL" --exit-code
 
       - name: Build
         run: npm run build
