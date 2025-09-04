@@ -1,3 +1,16 @@
+# NovaTok App Template
+Next.js + Tailwind + Plugins + Prisma + VS Code monster config.
+
+## Quick start
+1. `npm i`
+2. `npm run dev`
+3. Visit `/plugins`
+
+## Useful
+- `npm run doctor`
+- `npm run typecheck`
+- `npx prisma studio`
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

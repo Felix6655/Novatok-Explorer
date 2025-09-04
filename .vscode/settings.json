@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "files.autoSave": "onFocusChange",
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "eslint.validate": ["javascript","javascriptreact","typescript","typescriptreact"],
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.iconTheme": "material-icon-theme"
+}

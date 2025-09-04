@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Dev", "type": "shell", "command": "npm run dev" },
+    { "label": "Build", "type": "shell", "command": "npm run build" },
+    { "label": "Typecheck", "type": "shell", "command": "npm run typecheck" },
+    { "label": "Doctor", "type": "shell", "command": "npm run doctor" },
+    { "label": "Prisma Studio", "type": "shell", "command": "npx prisma studio" },
+    { "label": "Reinstall", "type": "shell", "command": "npm run reinstall" }
+  ]
+}

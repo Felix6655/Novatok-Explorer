@@ -5,7 +5,10 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: { '2xl': '1.25rem' },
+      colors: { ink: '#0f0f1a' }
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),
